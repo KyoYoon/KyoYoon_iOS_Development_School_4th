@@ -39,43 +39,23 @@ class City: NSObject {
 }
 ```
 - 오브젝트는 클래스를 인스턴스화하여 만든 인스턴스나 변수를 의미하는데 실질적인 행위를 하게 만들어주는 역할을 하며, 클래스와 달리 여러 번 생성이 가능하다. 
-- 위 클래스를 이용하여 
+- 위 클래스를 이용하여 인스턴스화하려면 아래와 같이 변수 선언을 해주면 된다.
 
 ```
 var city:City
 ```
+--
+#### 2-1. 클래스와 오브젝트 간의 차이점
+- 클래스는 어떤 물체를 만들기 위한 틀로 인식하면 되며 정의는 한 번만 할 수 있으며, 객체는 클래스를 인스턴화한 인스턴스 또는 변수를 말한다.
+- 실제 컴퓨터 상에서 보면 클래스는 메모리에 올라가지 않은 채 물체의 기능 및 목적을 정의한 것이며 객체는 인스턴스화를 통해 메모리에 적재된 상태이고 객체는 원하는 대로 여러 번 사용할 수 있다. 
+- 이 두 개의 차이점은 아래와 같이 정리해볼 수 있다. 
 
-마크다운은 **강조**선과 ~취소~선을 지원합니다. 취소는 깃허브에서 취소된 상태로 잘 보인다. `인라인 스니펫(snipet)`을 지원합니다.
-
-*이탤릭* *italic* 깃허브에서 한글이 지원안되고 영어는 잘 된다.
-
-| header | detailed |
-|---|---|
-| abc | def |
-
-| 좌측정렬 | 중앙정렬 | 우측정렬 |
-|:---|:---:|---:|
-| 왼 | 중 | 448.0 |
-| 음 | 음 | 38.0 |
-
-> 아주 좋은 말씀 
-
-> 여러 줄 되죠. 
-
-
-
-- 1단계
-	- 2단계
-		- 3단계
-		
-		> 인용 
-
-
-
-![스크린샷](images/poster.jpg) 
-
-
-[샘플](sample.md)
+|  | Class | Object |
+|---|---|---|
+| Definition | Class is mechanism of binding data members and associated methods in a single unit. | Instance of class or variable of class. |
+| Existence | It is logical existence | It is physical existence |
+| Memory Allocation | Memory space is not allocated , when it is created. | Memory space is allocated, when it is created. |
+| Declaration/Definition | Definition is created once. | it is created many time as you require. |
 
 
 
