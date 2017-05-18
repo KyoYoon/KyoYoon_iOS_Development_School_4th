@@ -77,8 +77,8 @@ class ViewController: UIViewController {
         var airports:[String:String] = ["ICH":"인천공항", "CJU":"제주공항"]
         
         // 여기서 프린트를 했는데 왜 Optional 이 나왔을까..
-        print("\(airports["ICH"])")
-        print("\(airports["CJU"])")
+        print("\(airports["ICH"]!)")
+        print("\(airports["CJU"]!)")
         
         // 구구단 예제 - while 문 예제
         print()
@@ -119,6 +119,8 @@ class ViewController: UIViewController {
             print("파라메터가 소수입니다")
         }
         
+        // Optional 테스트 
+        printNilTest()
         
     }
 
@@ -256,6 +258,18 @@ class ViewController: UIViewController {
         }
         
         return result
+    }
+    
+    func printNilTest() {
+        
+        var otName:String?
+        var name:String = "joo"
+        
+        print("Optional - nil test")
+        
+        print(otName)
+        print(name)
+        
     }
 
 }
