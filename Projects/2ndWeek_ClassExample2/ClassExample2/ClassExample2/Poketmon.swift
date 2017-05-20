@@ -36,14 +36,17 @@ class Poketmon {
         
         //let targetName = monster.name
         
-        let skill:[String:Any] = skillList[skillNum]
-        let skillName:String = skill["name"] as! String
+        let skill:[String:Any] = skillList[skillNum] // 사용할 스킬 딕셔너리를 가져온다.
+        let skillName:String = skill["name"] as! String // 이름을 추출해 저장한다.
         
         /* as : 다운 케스팅*/
         print("\(self.name)이 \(monster.name)에게 \(skillName)으로 공격합니다.")
         
         // skill["demage"] 가 Int가 되지 않을 수도 있기 때문에 !을 붙인다.
-        let skillDemage:Int = skill["damage"] as! Int
+        let skillDemage:Int = skill["damage"] as! Int // 데미지를 추출하여 저장한다.
+        
+        
+        
         monster.hp -= skillDemage
         
     }
