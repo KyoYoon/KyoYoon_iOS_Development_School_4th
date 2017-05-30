@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8op-KO-bn5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQR-tA-bPD" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1467.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g4Y-qp-xfe">
+                                                <rect key="frame" x="-0.5" y="0.0" width="375" height="1467.5"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aXA-aC-lF6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="aXA-aC-lF6" secondAttribute="height" multiplier="4:3" id="7dw-01-zpv"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXe-Ek-xuk" userLabel="Label Container">
+                                                        <rect key="frame" x="0.0" y="281.5" width="375" height="904.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgf-J5-9U0">
+                                                                <rect key="frame" x="16" y="16" width="343" height="872.5"/>
+                                                                <mutableString key="text">The ancient Greeks didn’t go to the theater just to be entertained. Aristotle believed that audiences saw themselves reflected in tragic characters and that the very act of watching a character’s downfall helped purge them of emotions like pity and fear, a process he called catharsis or, roughly, “purification.”
+
+More than 2,500 years later, a young classics major named Bryan Doerries wondered whether he could help a growing and vulnerable population in need of catharsis: veterans of the long wars in Iraq and Afghanistan, many of whom come home from combat with depression, post-traumatic stress disorder and suicidal thoughts.
+
+His idea became a project he calls Theater of War, which has now staged more than 400 performances for veterans across the country. He asked high-profile actors, including Adam Driver, Frances McDormand and David Strathairn, to read from the war plays of Sophocles. After the reading, the veterans in the audience talk about their own trauma and their trouble readjusting to civilian life.
+
+The project has attracted thousands of veterans and their families as they try to readjust to life away from the battlefield. It isn’t an easy process.
+
+“You create a permissive enough environment where people can speak truth,” Mr. Doerries said. “The Greeks have a word which means ‘balanced-mindedness,’ which was the ideal of the fifth century. So how do you rebalance the mind of an Athenian? Part of the answer is to give them the opportunity to vent and purge these emotions that can’t be bottled up.”</mutableString>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" secondItem="Dgf-J5-9U0" secondAttribute="height" constant="32" id="UgF-BH-MMf"/>
+                                                            <constraint firstItem="Dgf-J5-9U0" firstAttribute="top" secondItem="EXe-Ek-xuk" secondAttribute="top" constant="16" id="XRr-sD-xcH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Dgf-J5-9U0" secondAttribute="trailing" constant="16" id="dnJ-fF-1Og"/>
+                                                            <constraint firstItem="Dgf-J5-9U0" firstAttribute="leading" secondItem="EXe-Ek-xuk" secondAttribute="leading" constant="16" id="ptP-JZ-gad"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MXL-NT-fRM">
+                                                        <rect key="frame" x="0.0" y="1186" width="375" height="281.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="MXL-NT-fRM" secondAttribute="height" multiplier="4:3" id="MPb-dl-obG"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" secondItem="g4Y-qp-xfe" secondAttribute="height" id="7tA-ee-Qbb"/>
+                                            <constraint firstItem="g4Y-qp-xfe" firstAttribute="centerX" secondItem="JQR-tA-bPD" secondAttribute="centerX" id="AIz-3k-4fR"/>
+                                            <constraint firstItem="g4Y-qp-xfe" firstAttribute="width" secondItem="JQR-tA-bPD" secondAttribute="width" id="RaP-YG-B8P"/>
+                                            <constraint firstItem="g4Y-qp-xfe" firstAttribute="top" secondItem="JQR-tA-bPD" secondAttribute="top" id="b12-Ks-i6e"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JQR-tA-bPD" firstAttribute="leading" secondItem="8op-KO-bn5" secondAttribute="leading" id="JnC-Ll-UEz"/>
+                                    <constraint firstItem="JQR-tA-bPD" firstAttribute="width" secondItem="8op-KO-bn5" secondAttribute="width" id="Nce-L9-pzM"/>
+                                    <constraint firstAttribute="bottom" secondItem="JQR-tA-bPD" secondAttribute="bottom" id="Ydt-fC-tOJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="JQR-tA-bPD" secondAttribute="trailing" id="cZq-bz-VHB"/>
+                                    <constraint firstItem="JQR-tA-bPD" firstAttribute="top" secondItem="8op-KO-bn5" secondAttribute="top" id="mPf-Oi-0qn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8op-KO-bn5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Wd-fS-dxt"/>
+                            <constraint firstItem="8op-KO-bn5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="RgK-nO-C3g"/>
+                            <constraint firstItem="8op-KO-bn5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rXu-Ai-yY7"/>
+                            <constraint firstItem="8op-KO-bn5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="vfw-KI-GXd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ctk-Gm-b05"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat.jpg" width="500" height="312"/>
+        <image name="cat2.jpg" width="1600" height="900"/>
+    </resources>
+</document>

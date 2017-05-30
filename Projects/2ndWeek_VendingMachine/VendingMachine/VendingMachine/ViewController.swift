@@ -81,7 +81,7 @@ class ViewController: UIViewController {
                 print("사용자가 보유한 잔돈: \(change)")
                 
                 
-                if (change > 0) { // 잔액이 0보다 클 때만 잔액 배열에 추가
+                if (change >= 0) { // 잔액이 0과 같거나 0보다 클 때만 잔액 배열에 추가
                     labelChangeInfo.text = ""
                     userReceiveChangeArray.append(beveragePrice)
                     
@@ -122,7 +122,7 @@ class ViewController: UIViewController {
                 print("사용자가 보유한 잔돈: \(change)")
                 
                 
-                if (change > 0) { // 잔액이 0보다 클 때만 잔액 배열에 추가
+                if (change >= 0) { // 잔액이 0과 같거나 0보다 클 때만 잔액 배열에 추가
                     labelChangeInfo.text = ""
                     userReceiveChangeArray.append(beveragePrice)
                     
@@ -133,7 +133,7 @@ class ViewController: UIViewController {
                     restorePriceTagColor(money: change)
                     
                     
-                } else { // 잔액이 0이거나 잔액이 - 가 되면 잔돈을 사용자가 넣은 돈에 옮긴다.
+                } else { // 잔액이 - 가 되면 잔돈을 사용자가 넣은 돈에 옮긴다.
                     labelChangeInfo.text = "잔액이 부족합니다. 돈을 더 넣으세요."
                     
                     labelChange.text = "0"

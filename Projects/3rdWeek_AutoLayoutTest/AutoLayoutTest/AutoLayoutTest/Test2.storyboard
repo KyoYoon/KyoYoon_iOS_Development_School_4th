@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Qct-9Q-2z1">
+            <objects>
+                <viewController id="cPJ-DZ-wJQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mZ2-ab-Ah6"/>
+                        <viewControllerLayoutGuide type="bottom" id="mx0-zD-62H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ry2-zv-PmL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVV-1q-hcN">
+                                <rect key="frame" x="172" y="81" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RVV-1q-hcN" secondAttribute="height" multiplier="1:1" id="0tJ-mO-PTn"/>
+                                    <constraint firstAttribute="width" constant="30" id="Eho-Sl-Gsv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q75-yM-mVw">
+                                <rect key="frame" x="253" y="81" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q75-yM-mVw" secondAttribute="height" multiplier="1:1" id="KEb-vX-kjh"/>
+                                    <constraint firstAttribute="width" constant="30" id="MkW-3z-xPT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xX-2S-6fR">
+                                <rect key="frame" x="86" y="81" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7xX-2S-6fR" secondAttribute="height" multiplier="1:1" id="EXw-Ue-dk6"/>
+                                    <constraint firstAttribute="width" constant="30" id="n3t-xK-iMt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RVV-1q-hcN" firstAttribute="bottom" secondItem="Ry2-zv-PmL" secondAttribute="centerY" multiplier="1/3" id="Y6Q-xK-jsI"/>
+                            <constraint firstItem="q75-yM-mVw" firstAttribute="width" secondItem="q75-yM-mVw" secondAttribute="height" multiplier="1:1" id="c0I-o7-Gf7"/>
+                            <constraint firstItem="RVV-1q-hcN" firstAttribute="centerX" secondItem="Ry2-zv-PmL" secondAttribute="centerX" id="gUW-Yj-g8e"/>
+                            <constraint firstItem="7xX-2S-6fR" firstAttribute="width" secondItem="7xX-2S-6fR" secondAttribute="height" multiplier="1:1" id="xHe-aW-1Lh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npa-9Z-CSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="145"/>
+        </scene>
+    </scenes>
+</document>
