@@ -16,3 +16,17 @@
 
 - [강의자료](Assignments/1stWeek/20170508.pdf)
 - [클래스와 객체간의 차이](Assignments/1stWeek/DifferenceBetweenClassAndObject.md)
+
+### 2주차 
+
+- [강의자료(Collection Type)](Assignments/2ndWeek/0516.pdf)
+- [강의자료(Optional)](Assignments/2ndWeek/0517.pdf)
+- [옵셔널](Assignments/2ndWeek/Optional.md)
+
+#### 3주차 
+
+- [강의자료(Class and Object)](Assignments/3rdWeek/0524.pdf)
+- [강의자료(AutoLayout and Delegate)](Assignments/3rdWeek/0525-26.pdf)
+- [클래스와 구조체](Assignments/3rdWeek/ClassAndObject.md)
+
+---
