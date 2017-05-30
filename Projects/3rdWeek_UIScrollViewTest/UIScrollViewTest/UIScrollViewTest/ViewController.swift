@@ -43,7 +43,12 @@ class ViewController: UIViewController {
 //        v3.backgroundColor = .blue
 //        sc.addSubview(v3)
         
+        // 저장 
+        //UserDefaults.standard.set("hihihi", forKey: "name")
         
+        let name:String = UserDefaults.standard.string(forKey: "name")!
+        
+        print(name)
         
         
     }

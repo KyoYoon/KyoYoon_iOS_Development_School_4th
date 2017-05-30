@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  LogonScreen
+//  UserDefaultsTest
 //
-//  Created by 정교윤 on 2017. 5. 28..
+//  Created by 정교윤 on 2017. 5. 30..
 //  Copyright © 2017년 정교윤. All rights reserved.
 //
 
@@ -16,17 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        // 뷰컨트롤러를 코드로 불러와서 띄운다.
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-        // View Controller
-        let storyboard:UIStoryboard = UIStoryboard(name: "NewMain", bundle: Bundle.main) // nil 을 넣어도 Bundle.main이 들어감
-        let viewController:NewMainViewController = storyboard.instantiateViewController(withIdentifier: "NewMainViewController") as! NewMainViewController
-        
-        self.window?.rootViewController = viewController
-        self.window?.makeKeyAndVisible()
-
         return true
     }
 

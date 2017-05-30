@@ -12,7 +12,7 @@
         <!--Cover View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CoverViewController" customModule="LogonScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CoverViewController" id="BYZ-38-t0r" customClass="CoverViewController" customModule="LogonScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -192,6 +192,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="wYY-jP-aMa">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="SqE-EZ-rGe" customClass="MainViewController" customModule="LogonScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J9A-Kq-Sjo"/>
+                        <viewControllerLayoutGuide type="bottom" id="V4M-li-ypH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qMq-5h-evZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHP-19-rs6">
+                                <rect key="frame" x="153" y="167" width="46" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Jt-A3-OUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="813"/>
         </scene>
         <!--After Logon View Controller-->
         <scene sceneID="VAj-G9-A9K">
