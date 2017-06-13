@@ -12,11 +12,19 @@ class PoketmonViewController: UIViewController, UITableViewDataSource, UITableVi
 
     var poketmonList:[String]?
     
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         poketmonList = PoketMonData.names
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,23 +57,39 @@ class PoketmonViewController: UIViewController, UITableViewDataSource, UITableVi
         return 80.0
     }
     
+    // Storyboard 에서 segue로 연결하지 않았을 때
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // 셀렉트했을 때 회색표시를 없애준다.
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let nextVC:DetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+//        let nextVC:DetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+//        
+//        // 아직 뷰가 그려지기 전이므로 일단 그 뷰의 변수에 정보를 넘기고 그 뷰에서 ViewDidLoad 함수에서 처리를 해준다.
+//        // 이 상태에서 Label과 ImageView 변수에 값을 집어넣으면 nil 이므로 런타임 에러가 발생한다.
+//        nextVC.imgName = "\(indexPath.row+1).png"
+//        nextVC.titleName = PoketMonData.names[indexPath.row]
+//        
+//        
+//        self.navigationController?.pushViewController(nextVC, animated: true)
+        
+        
+        
+    }
+    
+    // Storyboard 에서 segue로 연결하였을 때
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC:DetailViewController = segue.destination as! DetailViewController
+        
+        let cell = sender as! UITableViewCell
+        
+        let indexPath = self.tableView.indexPath(for: cell)!
         
         // 아직 뷰가 그려지기 전이므로 일단 그 뷰의 변수에 정보를 넘기고 그 뷰에서 ViewDidLoad 함수에서 처리를 해준다.
         // 이 상태에서 Label과 ImageView 변수에 값을 집어넣으면 nil 이므로 런타임 에러가 발생한다.
         nextVC.imgName = "\(indexPath.row+1).png"
         nextVC.titleName = PoketMonData.names[indexPath.row]
-        
-        
-        self.navigationController?.pushViewController(nextVC, animated: true)
-        
-        
-        
+
     }
     
     

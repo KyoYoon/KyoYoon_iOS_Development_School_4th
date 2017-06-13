@@ -20,11 +20,20 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var textFieldPassworldConfirm: UITextField!
     
+    var tap = UITapGestureRecognizer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         initConfig()
+    }
+
+    // 뷰가 그려진 다음에 scroll view에 대한 설정을 한다.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setTap()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +47,25 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         //textFieldPassword.placeholder = "패스워드"
         //textFieldPassworldConfirm.placeholder = "패스워드 확인"
         
+    }
+
+    // scroll view 를 tap 했을 때
+    func setTap() {
+        tap = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
+        //tap.numberOfTapsRequired = 1;
+        //tap.numberOfTouchesRequired = 1;
+        //tap.delegate = self as? UIGestureRecognizerDelegate
+        //tap.cancelsTouchesInView = false
+        scrollView.addGestureRecognizer(tap)
+    }
+    
+    func hideKeyboard() {
+        print("You've tapped scroll view!")
+        
+        self.view.endEditing(true)
+        textFieldEmail.resignFirstResponder()
+        textFieldPassword.resignFirstResponder()
+        self.scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
     }
     
     // 외부를 터치하면 키보드가 내려간다.
@@ -92,26 +120,25 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         
         if textFieldEmail.text?.isEmpty == false && textFieldNickName.text?.isEmpty == false && textFieldPassword.text?.isEmpty == false {
+            // 비밀번호 및 비밀번호 확인 란에 입력한 글자가 서로 일치하면 계정을 생성
             if textFieldPassword.text == textFieldPassworldConfirm.text {
                 // UserDefaults 에 저장
-                UserDefaults.standard.set(textFieldEmail.text!, forKey: Authentication.email)
-                UserDefaults.standard.set(textFieldNickName.text!, forKey: Authentication.nickname)
-                UserDefaults.standard.set(textFieldPassword.text!, forKey: Authentication.password)
+
+                // 딕셔너리를 만든 후 어레이에 어펜드하여 딕셔너리를 엘리먼트로 가지는 어레이 자체를 UserDefaults에 저장한다.
+                 var user:[String:Any] = [:]
+                 user.updateValue(textFieldEmail.text!, forKey: Authentication.email)
+                 user.updateValue(textFieldNickName.text!, forKey: Authentication.nickname)
+                 user.updateValue(textFieldPassword.text!, forKey: Authentication.password)
                 
-                print(UserDefaults.standard.string(forKey: Authentication.email)!)
-                print(UserDefaults.standard.string(forKey: Authentication.nickname)!)
-                print(UserDefaults.standard.string(forKey: Authentication.password)!)
+                 var userList:[Any] = UserDefaults.standard.array(forKey: Authentication.UserList) ?? [] // nil-coalescing operation
                 
-                // var user:[String:Any] = [:]
-                // user.updateValue(textFieldEmail.text!, forKey: Authentication.email)
-                // user.updateValue(textFieldNickName.text!, forKey: Authentication.nickname)
-                // user.updateValue(textFieldPassword.text!, forKey: Authentication.password)
+                 userList.append(user)
                 
-                // var userList:[Any] = UserDefaults.standard.array(forKey: "UserList") ?? [] // nil-coalescing operation
+                 UserDefaults.standard.set(userList, forKey: "UserList")
                 
-                // userList.append(user)
-                
-                // UserDefaults.standard.set(userList, forKey: "UserList")
+                print("Email: \(textFieldEmail.text!)")
+                print("Nickname: \(textFieldNickName.text!)")
+                print("Password: \(textFieldPassword.text!)")
                 
                 
                 // UnwindToMain 세그 써서 로그온했다고 판단하고 바로 Main 화면으로 간다.
@@ -126,6 +153,20 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
             print("전부 입력해주세요!")
         }
 
+    }
+    
+    // performSegue 를 실행하면 그 다음에 prepare 함수가 실행되게 되므로 아래와 override 하여 재정의한다.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // segue.identifier 를 이용하여 여러 개의 세그에 대해 구분하여 처리 가능하다.
+        
+        let destinationVC:MainViewController = segue.destination as! MainViewController
+        
+        let thisVC:CreateAccountViewController = sender as! CreateAccountViewController
+        
+        destinationVC.email = thisVC.textFieldEmail.text!
+        
+        
     }
 
     /*

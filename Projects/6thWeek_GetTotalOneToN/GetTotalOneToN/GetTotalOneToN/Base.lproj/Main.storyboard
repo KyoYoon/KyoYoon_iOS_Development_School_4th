@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GetTotalOneToN" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-CC-8ko">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbm-7v-Hzw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="10"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="CGj-I6-Ik7"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Iuw-ug-ruz">
+                                        <rect key="frame" x="0.0" y="10" width="375" height="323"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1부터 N까지의 합 구하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-ld-0ET">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="grr-RH-EFM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1보다 큰 숫자를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I6k-Kf-KzP">
+                                                <rect key="frame" x="0.0" y="30" width="375" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="B0i-WY-7wT"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMB-rg-P2M">
+                                                <rect key="frame" x="0.0" y="60" width="375" height="133"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="133" id="lja-GI-dFf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5d-bV-vvz">
+                                                <rect key="frame" x="0.0" y="193" width="375" height="100"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIm-OY-Twg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bd-gS-L1o">
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                                                                <state key="normal" title="반복문"/>
+                                                                <connections>
+                                                                    <action selector="touchUpRepeatBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="84C-Ve-3ZV"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8f-UF-WHa">
+                                                                <rect key="frame" x="125" y="0.0" width="125" height="100"/>
+                                                                <state key="normal" title="공식 - N(N+1)/2"/>
+                                                                <connections>
+                                                                    <action selector="touchUpEquation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J3F-hg-5QP"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mct-Y1-ZsJ">
+                                                                <rect key="frame" x="250" y="0.0" width="125" height="100"/>
+                                                                <state key="normal" title="재귀함수"/>
+                                                                <connections>
+                                                                    <action selector="touchUpRecursiveBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Opi-Vh-Xiq"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="a8f-UF-WHa" firstAttribute="height" secondItem="VIm-OY-Twg" secondAttribute="height" id="2wN-Pp-3FC"/>
+                                                            <constraint firstItem="mct-Y1-ZsJ" firstAttribute="height" secondItem="VIm-OY-Twg" secondAttribute="height" id="RIW-6q-j5j"/>
+                                                            <constraint firstItem="a8f-UF-WHa" firstAttribute="width" secondItem="6Bd-gS-L1o" secondAttribute="width" id="UF1-VU-Ibq"/>
+                                                            <constraint firstItem="6Bd-gS-L1o" firstAttribute="height" secondItem="VIm-OY-Twg" secondAttribute="height" id="c66-BE-I6y"/>
+                                                            <constraint firstItem="mct-Y1-ZsJ" firstAttribute="width" secondItem="6Bd-gS-L1o" secondAttribute="width" id="tzz-fO-j8S"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="VIm-OY-Twg" firstAttribute="width" secondItem="H5d-bV-vvz" secondAttribute="width" id="MTf-fx-uQ8"/>
+                                                    <constraint firstItem="VIm-OY-Twg" firstAttribute="centerY" secondItem="H5d-bV-vvz" secondAttribute="centerY" id="Wp9-2E-GoZ"/>
+                                                    <constraint firstItem="VIm-OY-Twg" firstAttribute="centerX" secondItem="H5d-bV-vvz" secondAttribute="centerX" id="pMV-J0-TZi"/>
+                                                    <constraint firstItem="VIm-OY-Twg" firstAttribute="height" secondItem="H5d-bV-vvz" secondAttribute="height" id="xi3-5r-a6s"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQl-Bq-rtp">
+                                                <rect key="frame" x="0.0" y="293" width="375" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="d55-dD-RiU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="323" id="FAK-ea-cUe"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e75-PG-xWD">
+                                        <rect key="frame" x="0.0" y="333" width="375" height="10"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="ba5-Ah-V1t"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kRR-Kt-QBL">
+                                        <rect key="frame" x="0.0" y="343" width="375" height="324"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가운데 문자 출력하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqa-Ct-3JJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="aKP-fu-9Mi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="문자열을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="peG-Y5-7gs">
+                                                <rect key="frame" x="0.0" y="30" width="375" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Cf9-T9-uWu"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Stu-09-JQy"/>
+                                                </connections>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeB-pH-5Kl">
+                                                <rect key="frame" x="0.0" y="60" width="375" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="odN-EY-9VP"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ZG-SN-88X">
+                                                <rect key="frame" x="0.0" y="160" width="375" height="134"/>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3O-GH-NCk">
+                                                <rect key="frame" x="0.0" y="294" width="375" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="3xV-9s-f0V"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Iuw-ug-ruz" firstAttribute="width" secondItem="NPR-CC-8ko" secondAttribute="width" id="HOv-z2-f4x"/>
+                                    <constraint firstItem="kRR-Kt-QBL" firstAttribute="width" secondItem="NPR-CC-8ko" secondAttribute="width" id="Uuy-0h-maW"/>
+                                    <constraint firstItem="pbm-7v-Hzw" firstAttribute="width" secondItem="NPR-CC-8ko" secondAttribute="width" id="ZH6-7f-wXt"/>
+                                    <constraint firstItem="pbm-7v-Hzw" firstAttribute="top" secondItem="NPR-CC-8ko" secondAttribute="top" id="vSP-M6-YMm"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NPR-CC-8ko" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="85I-lH-5Qj"/>
+                            <constraint firstItem="NPR-CC-8ko" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fXG-Xl-WZQ"/>
+                            <constraint firstItem="NPR-CC-8ko" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pOP-7s-eHo"/>
+                            <constraint firstItem="NPR-CC-8ko" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="qIP-3h-R4T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelResultOne" destination="QQl-Bq-rtp" id="Pqz-4m-3vG"/>
+                        <outlet property="labelResultTwo" destination="e3O-GH-NCk" id="tqK-cG-97w"/>
+                        <outlet property="textFieldCharacter" destination="peG-Y5-7gs" id="ncO-JH-WZA"/>
+                        <outlet property="textFieldNumber" destination="I6k-Kf-KzP" id="sVj-aR-bPI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>

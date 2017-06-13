@@ -23,5 +23,7 @@ struct Authentication {
     static let idPasswordRequiredMsg = "아이디와 비밀번호 모두 입력하세요."
     static let okBtnTitle = "OK"
     static let cancelBtnTitle = "CANCEL"
+    static let UserList = "UserList"
+    static let FriendList = "FriendList"
     
 }

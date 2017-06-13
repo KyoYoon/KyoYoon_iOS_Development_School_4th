@@ -17,6 +17,7 @@
 		4840D1FA1EDE8A2600CBBF83 /* createaccbgimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4840D1F91EDE8A2600CBBF83 /* createaccbgimage.jpg */; };
 		4840D1FC1EDE942A00CBBF83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840D1FB1EDE942A00CBBF83 /* Constants.swift */; };
 		4840D1FE1EDE984D00CBBF83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840D1FD1EDE984D00CBBF83 /* MainViewController.swift */; };
+		48E4746C1EE7F8E4007002C6 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4746B1EE7F8E4007002C6 /* CustomScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4840D1F91EDE8A2600CBBF83 /* createaccbgimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = createaccbgimage.jpg; sourceTree = "<group>"; };
 		4840D1FB1EDE942A00CBBF83 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4840D1FD1EDE984D00CBBF83 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		48E4746B1EE7F8E4007002C6 /* CustomScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4840D1F51EDE871C00CBBF83 /* bgimage.jpg */,
 				4840D1E31EDE521D00CBBF83 /* AppDelegate.swift */,
 				4840D1E51EDE521D00CBBF83 /* LogonViewController.swift */,
+				48E4746B1EE7F8E4007002C6 /* CustomScrollView.swift */,
 				4840D1FB1EDE942A00CBBF83 /* Constants.swift */,
 				4840D1E71EDE521D00CBBF83 /* Main.storyboard */,
 				4840D1EA1EDE521D00CBBF83 /* Assets.xcassets */,
@@ -155,6 +158,7 @@
 			files = (
 				4840D1F81EDE894B00CBBF83 /* CreateAccountViewController.swift in Sources */,
 				4840D1E61EDE521D00CBBF83 /* LogonViewController.swift in Sources */,
+				48E4746C1EE7F8E4007002C6 /* CustomScrollView.swift in Sources */,
 				4840D1E41EDE521D00CBBF83 /* AppDelegate.swift in Sources */,
 				4840D1FC1EDE942A00CBBF83 /* Constants.swift in Sources */,
 				4840D1FE1EDE984D00CBBF83 /* MainViewController.swift in Sources */,
@@ -319,6 +323,7 @@
 				4840D1F41EDE521D00CBBF83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,6 +15,8 @@ class LogonViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var textFieldPassword: UITextField!
     
+    var tap = UITapGestureRecognizer()
+    var isLogin:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,13 @@ class LogonViewController: UIViewController, UITextFieldDelegate {
         //UITableView
         
         initConfig()
+    }
+    
+    // 뷰가 그려진 다음에 scroll view에 대한 설정을 한다. 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setTap()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +46,7 @@ class LogonViewController: UIViewController, UITextFieldDelegate {
     func initConfig() {
         
         // custom navigation bar를 위해 기존 navigation bar를 숨김
-        self.navigationController?.isNavigationBarHidden = true
+        //self.navigationController?.isNavigationBarHidden = true
         
         self.view.endEditing(true)
         UserDefaults.standard.set(false, forKey: Authentication.authenticationBool)
@@ -47,13 +56,43 @@ class LogonViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    // 외부를 터치하면 키보드가 내려간다.
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    // scroll view 를 tap 했을 때
+    func setTap() {
+        tap = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
+        //tap.numberOfTapsRequired = 1;
+        //tap.numberOfTouchesRequired = 1;
+        //tap.delegate = self as? UIGestureRecognizerDelegate
+        //tap.cancelsTouchesInView = false
+        scrollView.addGestureRecognizer(tap)
+    }
+    
+    func hideKeyboard() {
+        print("You've tapped scroll view!")
+        
+        self.view.endEditing(true)
         textFieldEmail.resignFirstResponder()
         textFieldPassword.resignFirstResponder()
         self.scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
-        
     }
+    
+    // 외부를 터치하면 키보드가 내려간다.
+    // 스크롤뷰에 대해서는 touchBegan이 동작하지 않는다.
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        super.touchesBegan(touches, with: event)
+//        
+//        let touch:UITouch = touches.first!
+//        
+//        print(touch.view?.tag ?? 0)
+//        
+//        if touch.view == self.scrollView {
+//            print("this view is scrollView")
+//            
+//            textFieldEmail.resignFirstResponder()
+//            textFieldPassword.resignFirstResponder()
+//            self.scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+//        }
+//        
+//    }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.scrollView.setContentOffset(CGPoint(x: 0.0, y: 160.0), animated: true)
@@ -86,25 +125,46 @@ class LogonViewController: UIViewController, UITextFieldDelegate {
     }
     
     func loginRequest() {
+        
         self.view.endEditing(true)
         
         if self.textFieldEmail.text?.isEmpty == false && self.textFieldPassword.text?.isEmpty == false {
             
-//            let userList:[[String:Any]] = UserDefaults.standard.array(forKey: "UserList") as! [[String:Any]]
-//            
-//            // user = [String:Any]
-//            for user in userList {
-//                let userEmail:String = user[Authentication.email]! as! String
-//                let pw:String = user[Authentication.password] as! String
-//                if textFieldEmail.text != userEmail && textFieldPassword.text != pw {
-//                    UserDefaults.standard.set(true, forKey: Authentication.authenticationBool)
-//                    
-//                    
-//                    
-//                }
-//            }
+            //var userList:[Any]
             
-            if self.textFieldEmail.text! == UserDefaults.standard.string(forKey: Authentication.email) && self.textFieldPassword.text! == UserDefaults.standard.string(forKey: Authentication.password) {
+            //let userList:[[String:Any]] = UserDefaults.standard.array(forKey: Authentication.UserList) as! [[String:Any]]
+            
+            let userList:[Any] = UserDefaults.standard.array(forKey: Authentication.UserList) ?? []
+            
+            print("userList.count: \(userList.count)")
+            
+            if userList.count == 0 {
+                isLogin = false
+                print(isLogin)
+            } else {
+                
+                // user = [String:Any]
+                for user in userList {
+                    
+                    let userInfo = user as! [String:Any]
+                    
+                    
+                    let userEmail:String = userInfo[Authentication.email] as! String
+                    let pw:String = userInfo[Authentication.password] as! String
+                    
+                    // 사용자가 입력한 이메일과 패스워드가 기존에 저장한 것과 둘 다 일치할 때에만 true를 셋팅한다.
+                    if textFieldEmail.text == userEmail && textFieldPassword.text == pw {
+                        UserDefaults.standard.set(true, forKey: Authentication.authenticationBool)
+                        
+                        isLogin = true
+                        
+                    }
+                }
+
+            }
+            
+            
+            if isLogin == true {
                 print("로그인 성공")
                 
                 UserDefaults.standard.set(true, forKey: Authentication.authenticationBool)
