@@ -42,6 +42,8 @@ struct MyClass {
     private var isInputKScore:Bool = true
     private var isInputEScore:Bool = true
     
+ 
+    
     var koreanScore:Int {
         get {
             return kScore
@@ -84,7 +86,7 @@ struct MyClass {
 //            return Double(total)/Double(subjectCount)
 //        }
         
-        return Double(total)/Double(subjectCount) // 읽기 전용 프로퍼티시 get {} 필요하다.
+        return Double(total)/Double(subjectCount) // 읽기 전용 프로퍼티시 get {} 는 생략해도 된다.
     }
 }
 
@@ -137,7 +139,45 @@ class AudioChannel2 {
 
 // self property
 struct Point2 {
-    var x = 0.0, y = 0.0 
+    var x = 0.0, y = 0.0
+    func isToTheRightOf (x: Double) -> Bool {
+        return self.x > x
+    }
+}
+
+// 구조체 내에서 Value Type 프로퍼티 수정
+struct Point3 {
+    var x = 0.0, y = 0.0
+    
+    // 기본적으로 구조체와 열거형의 값타입 프로퍼티는 인스턴스 메소드 내에서 수정이 불가능하다. 
+    // 다른 언어의 경우 구조체에 메소드를 넣는 것 자체가 불가능하다.
+    // 그러나, 구조체 내에서 mutating keyword를 통해 메소드를 선언해서 값타입 프로퍼티를 수정하는 것은 허용이 된다.
+    mutating func moveBy(x deltaX: Double, y deltaY: Double) {
+        x += deltaX
+        y += deltaY
+    }
+}
+
+struct Point4 {
+    static var x = 0.0, y = 0.0 // 정적 변수 (클래스 이름.변수명)
+    
+    var z = 0.0 // 인스턴스 변수 (인스턴스 이름.변수명)
+    
+    // 기본적으로 구조체와 열거형의 값타입 프로퍼티는 인스턴스 메소드 내에서 수정이 불가능하다.
+    // 다른 언어의 경우 구조체에 메소드를 넣는 것 자체가 불가능하다.
+    // 그러나, 구조체 내에서 mutating keyword를 통해 메소드를 선언해서 값타입 프로퍼티를 수정하는 것은 허용이 된다.
+    static func moveBy(x deltaX: Double, y deltaY: Double) {
+        
+        self.x += deltaX
+        self.y += deltaY
+        // self.z = 0.0 // 인스턴스화한 뒤 z에 접근가능
+        
+    }
+    
+    mutating func moveBy2(x deltaX: Double, y deltaY: Double) {
+        self.z += deltaX
+        
+    }
 }
 
 
@@ -189,6 +229,10 @@ class ViewController: UIViewController {
         print(myScore.average)
         
         changeValue = 4
+        
+        
+        
+        
         
     }
 

@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class LogonViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
@@ -23,6 +25,8 @@ class LogonViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         //UITableView
+        
+        
         
         initConfig()
     }
@@ -103,6 +107,16 @@ class LogonViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+//        let tvType = TextFieldType(rawValue: textField.tag)! // 옵셔녈로 선언해야 한다.
+//        
+//        switch tvType {
+//        case TextFieldType.emailTextFieldTag:
+//            print("ddd")
+//        default:
+//            print("eee")
+//        }
+        
         switch textField.tag {
         case 100:
             self.view.viewWithTag(200)?.becomeFirstResponder()
@@ -185,24 +199,26 @@ class LogonViewController: UIViewController, UITextFieldDelegate {
                 print("로그인 실패")
                 //UserDefaults.standard.set(false, forKey: Authentication.authenticationBool)
                 
-                let alert:UIAlertController = UIAlertController(title: Authentication.loginFailTitle, message: Authentication.loginFailMsg, preferredStyle: .alert) // .actionsheet
+//                let alert:UIAlertController = UIAlertController(title: Authentication.loginFailTitle, message: Authentication.loginFailMsg, preferredStyle: .alert) // .actionsheet
+//                
+//                let okBtn:UIAlertAction = UIAlertAction(title: Authentication.okBtnTitle, style: UIAlertActionStyle.default, handler: { (alert:UIAlertAction) in
+//                    print("ok 버튼을 클릭하였습니다.")
+//                })
+//                let cancelBtn = UIAlertAction(title: Authentication.cancelBtnTitle, style: UIAlertActionStyle.default, handler: nil) // UIAlertActionStyle.cancel
+//                
+//                
+//                alert.addAction(okBtn)
+//                alert.addAction(cancelBtn)
+//                
+//                self.present(alert, animated: true, completion: nil)
                 
-                let okBtn:UIAlertAction = UIAlertAction(title: Authentication.okBtnTitle, style: UIAlertActionStyle.default, handler: { (alert:UIAlertAction) in
-                    print("ok 버튼을 클릭하였습니다.")
-                })
-                let cancelBtn = UIAlertAction(title: Authentication.cancelBtnTitle, style: UIAlertActionStyle.default, handler: nil) // UIAlertActionStyle.cancel
                 
-                
-                alert.addAction(okBtn)
-                alert.addAction(cancelBtn)
-                
-                self.present(alert, animated: true, completion: nil)
             }
         }
         else {
             print("이메일과 비밀번호를 모두 입력하세요.")
             //UserDefaults.standard.set(false, forKey: Authentication.authenticationBool)
-            
+            showAlert(type: .SignupFail, object: self)
             
         }
         
@@ -217,6 +233,37 @@ class LogonViewController: UIViewController, UITextFieldDelegate {
         self.loginRequest()
         
     }
-
+    
+    
+    
+    // 경고창 띄워주기
+//    func showAlert(type:AlertType) {
+//        let alert = UIAlertController(title: titleMsg(for: type), message: titleMsg(for: type), preferredStyle: .alert)
+//        
+//        let action = UIAlertAction(title: "확인", style: .default, handler: nil)
+//        alert.addAction(action)
+//        
+//        self.present(alert, animated: true, completion: nil)
+//    }
+//    
+//    // 조건에 맞게 경고창에 보여줄 메시지를 변수에 담아 저장한다.
+//    func titleMsg(for type:AlertType) -> String {
+//        var title = ""
+//        
+//        switch type {
+//            case .LoginFail:
+//                title = Authentication.idPasswordRequiredMsg
+//            case .SignupFail:
+//                title = "회원가입을 실패하였습니다."
+//            case .Success:
+//                title = "로그인에 성공하였습니다."
+//
+//        }
+//        
+//        return title
+//        
+//        
+//        
+//    }
 }
 

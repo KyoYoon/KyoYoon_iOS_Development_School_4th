@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		481C6D151EF101AA000090FE /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C6D141EF101AA000090FE /* AlertType.swift */; };
+		481C6D171EF1077D000090FE /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C6D161EF1077D000090FE /* AlertAction.swift */; };
+		481C6D191EF10CB1000090FE /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C6D181EF10CB1000090FE /* DataCenter.swift */; };
+		481C6D1B1EF10E56000090FE /* TextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C6D1A1EF10E56000090FE /* TextFieldType.swift */; };
 		4840D1E41EDE521D00CBBF83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840D1E31EDE521D00CBBF83 /* AppDelegate.swift */; };
 		4840D1E61EDE521D00CBBF83 /* LogonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840D1E51EDE521D00CBBF83 /* LogonViewController.swift */; };
 		4840D1E91EDE521D00CBBF83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4840D1E71EDE521D00CBBF83 /* Main.storyboard */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		481C6D141EF101AA000090FE /* AlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		481C6D161EF1077D000090FE /* AlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
+		481C6D181EF10CB1000090FE /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		481C6D1A1EF10E56000090FE /* TextFieldType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldType.swift; sourceTree = "<group>"; };
 		4840D1E01EDE521C00CBBF83 /* LogonProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogonProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4840D1E31EDE521D00CBBF83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4840D1E51EDE521D00CBBF83 /* LogonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogonViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +86,10 @@
 				4840D1EC1EDE521D00CBBF83 /* LaunchScreen.storyboard */,
 				4840D1EF1EDE521D00CBBF83 /* Info.plist */,
 				4840D1F71EDE894B00CBBF83 /* CreateAccountViewController.swift */,
+				481C6D141EF101AA000090FE /* AlertType.swift */,
+				481C6D161EF1077D000090FE /* AlertAction.swift */,
+				481C6D181EF10CB1000090FE /* DataCenter.swift */,
+				481C6D1A1EF10E56000090FE /* TextFieldType.swift */,
 			);
 			path = LogonProject;
 			sourceTree = "<group>";
@@ -156,12 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				481C6D191EF10CB1000090FE /* DataCenter.swift in Sources */,
 				4840D1F81EDE894B00CBBF83 /* CreateAccountViewController.swift in Sources */,
 				4840D1E61EDE521D00CBBF83 /* LogonViewController.swift in Sources */,
+				481C6D1B1EF10E56000090FE /* TextFieldType.swift in Sources */,
+				481C6D171EF1077D000090FE /* AlertAction.swift in Sources */,
 				48E4746C1EE7F8E4007002C6 /* CustomScrollView.swift in Sources */,
 				4840D1E41EDE521D00CBBF83 /* AppDelegate.swift in Sources */,
 				4840D1FC1EDE942A00CBBF83 /* Constants.swift in Sources */,
 				4840D1FE1EDE984D00CBBF83 /* MainViewController.swift in Sources */,
+				481C6D151EF101AA000090FE /* AlertType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

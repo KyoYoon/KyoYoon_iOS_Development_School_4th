@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		481C6D111EF0DDD0000090FE /* Class1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C6D101EF0DDD0000090FE /* Class1.swift */; };
-		4829F3EC1EEFC16200497BAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4829F3EB1EEFC16200497BAF /* AppDelegate.swift */; };
-		4829F3EE1EEFC16200497BAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4829F3ED1EEFC16200497BAF /* ViewController.swift */; };
-		4829F3F11EEFC16200497BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4829F3EF1EEFC16200497BAF /* Main.storyboard */; };
-		4829F3F31EEFC16200497BAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4829F3F21EEFC16200497BAF /* Assets.xcassets */; };
-		4829F3F61EEFC16200497BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4829F3F41EEFC16200497BAF /* LaunchScreen.storyboard */; };
+		3FF3A6351EF2C76100CF5A1E /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF3A6341EF2C76100CF5A1E /* ResultTableViewCell.swift */; };
+		BA52BD911EF2547D00C13620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52BD901EF2547D00C13620 /* AppDelegate.swift */; };
+		BA52BD931EF2547D00C13620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52BD921EF2547D00C13620 /* ViewController.swift */; };
+		BA52BD961EF2547D00C13620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA52BD941EF2547D00C13620 /* Main.storyboard */; };
+		BA52BD981EF2547D00C13620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA52BD971EF2547D00C13620 /* Assets.xcassets */; };
+		BA52BD9B1EF2547D00C13620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA52BD991EF2547D00C13620 /* LaunchScreen.storyboard */; };
+		BA52BDA71EF25E4300C13620 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52BDA61EF25E4300C13620 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		481C6D101EF0DDD0000090FE /* Class1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class1.swift; sourceTree = "<group>"; };
-		4829F3E81EEFC16200497BAF /* PropertiesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropertiesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4829F3EB1EEFC16200497BAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4829F3ED1EEFC16200497BAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4829F3F01EEFC16200497BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4829F3F21EEFC16200497BAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4829F3F51EEFC16200497BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4829F3F71EEFC16200497BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF3A6341EF2C76100CF5A1E /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		BA52BD8D1EF2547D00C13620 /* Battle-Royal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battle-Royal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA52BD901EF2547D00C13620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA52BD921EF2547D00C13620 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA52BD951EF2547D00C13620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA52BD971EF2547D00C13620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA52BD9A1EF2547D00C13620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA52BD9C1EF2547D00C13620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA52BDA61EF25E4300C13620 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4829F3E51EEFC16200497BAF /* Frameworks */ = {
+		BA52BD8A1EF2547D00C13620 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,73 +39,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4829F3DF1EEFC16200497BAF = {
+		BA52BD841EF2547D00C13620 = {
 			isa = PBXGroup;
 			children = (
-				4829F3EA1EEFC16200497BAF /* PropertiesTest */,
-				4829F3E91EEFC16200497BAF /* Products */,
+				BA52BD8F1EF2547D00C13620 /* Battle-Royal */,
+				BA52BD8E1EF2547D00C13620 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4829F3E91EEFC16200497BAF /* Products */ = {
+		BA52BD8E1EF2547D00C13620 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4829F3E81EEFC16200497BAF /* PropertiesTest.app */,
+				BA52BD8D1EF2547D00C13620 /* Battle-Royal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4829F3EA1EEFC16200497BAF /* PropertiesTest */ = {
+		BA52BD8F1EF2547D00C13620 /* Battle-Royal */ = {
 			isa = PBXGroup;
 			children = (
-				4829F3EB1EEFC16200497BAF /* AppDelegate.swift */,
-				4829F3ED1EEFC16200497BAF /* ViewController.swift */,
-				4829F3EF1EEFC16200497BAF /* Main.storyboard */,
-				4829F3F21EEFC16200497BAF /* Assets.xcassets */,
-				4829F3F41EEFC16200497BAF /* LaunchScreen.storyboard */,
-				4829F3F71EEFC16200497BAF /* Info.plist */,
-				481C6D101EF0DDD0000090FE /* Class1.swift */,
+				BA52BD901EF2547D00C13620 /* AppDelegate.swift */,
+				BA52BD921EF2547D00C13620 /* ViewController.swift */,
+				BA52BDA61EF25E4300C13620 /* ResultViewController.swift */,
+				3FF3A6341EF2C76100CF5A1E /* ResultTableViewCell.swift */,
+				BA52BD941EF2547D00C13620 /* Main.storyboard */,
+				BA52BD971EF2547D00C13620 /* Assets.xcassets */,
+				BA52BD991EF2547D00C13620 /* LaunchScreen.storyboard */,
+				BA52BD9C1EF2547D00C13620 /* Info.plist */,
 			);
-			path = PropertiesTest;
+			path = "Battle-Royal";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4829F3E71EEFC16200497BAF /* PropertiesTest */ = {
+		BA52BD8C1EF2547D00C13620 /* Battle-Royal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4829F3FA1EEFC16200497BAF /* Build configuration list for PBXNativeTarget "PropertiesTest" */;
+			buildConfigurationList = BA52BD9F1EF2547D00C13620 /* Build configuration list for PBXNativeTarget "Battle-Royal" */;
 			buildPhases = (
-				4829F3E41EEFC16200497BAF /* Sources */,
-				4829F3E51EEFC16200497BAF /* Frameworks */,
-				4829F3E61EEFC16200497BAF /* Resources */,
+				BA52BD891EF2547D00C13620 /* Sources */,
+				BA52BD8A1EF2547D00C13620 /* Frameworks */,
+				BA52BD8B1EF2547D00C13620 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PropertiesTest;
-			productName = PropertiesTest;
-			productReference = 4829F3E81EEFC16200497BAF /* PropertiesTest.app */;
+			name = "Battle-Royal";
+			productName = "Battle-Royal";
+			productReference = BA52BD8D1EF2547D00C13620 /* Battle-Royal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4829F3E01EEFC16200497BAF /* Project object */ = {
+		BA52BD851EF2547D00C13620 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "정교윤";
+				ORGANIZATIONNAME = "유하늘";
 				TargetAttributes = {
-					4829F3E71EEFC16200497BAF = {
+					BA52BD8C1EF2547D00C13620 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 4829F3E31EEFC16200497BAF /* Build configuration list for PBXProject "PropertiesTest" */;
+			buildConfigurationList = BA52BD881EF2547D00C13620 /* Build configuration list for PBXProject "Battle-Royal" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,55 +114,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 4829F3DF1EEFC16200497BAF;
-			productRefGroup = 4829F3E91EEFC16200497BAF /* Products */;
+			mainGroup = BA52BD841EF2547D00C13620;
+			productRefGroup = BA52BD8E1EF2547D00C13620 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4829F3E71EEFC16200497BAF /* PropertiesTest */,
+				BA52BD8C1EF2547D00C13620 /* Battle-Royal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4829F3E61EEFC16200497BAF /* Resources */ = {
+		BA52BD8B1EF2547D00C13620 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4829F3F61EEFC16200497BAF /* LaunchScreen.storyboard in Resources */,
-				4829F3F31EEFC16200497BAF /* Assets.xcassets in Resources */,
-				4829F3F11EEFC16200497BAF /* Main.storyboard in Resources */,
+				BA52BD9B1EF2547D00C13620 /* LaunchScreen.storyboard in Resources */,
+				BA52BD981EF2547D00C13620 /* Assets.xcassets in Resources */,
+				BA52BD961EF2547D00C13620 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4829F3E41EEFC16200497BAF /* Sources */ = {
+		BA52BD891EF2547D00C13620 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				481C6D111EF0DDD0000090FE /* Class1.swift in Sources */,
-				4829F3EE1EEFC16200497BAF /* ViewController.swift in Sources */,
-				4829F3EC1EEFC16200497BAF /* AppDelegate.swift in Sources */,
+				BA52BD931EF2547D00C13620 /* ViewController.swift in Sources */,
+				BA52BD911EF2547D00C13620 /* AppDelegate.swift in Sources */,
+				3FF3A6351EF2C76100CF5A1E /* ResultTableViewCell.swift in Sources */,
+				BA52BDA71EF25E4300C13620 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4829F3EF1EEFC16200497BAF /* Main.storyboard */ = {
+		BA52BD941EF2547D00C13620 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4829F3F01EEFC16200497BAF /* Base */,
+				BA52BD951EF2547D00C13620 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		4829F3F41EEFC16200497BAF /* LaunchScreen.storyboard */ = {
+		BA52BD991EF2547D00C13620 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4829F3F51EEFC16200497BAF /* Base */,
+				BA52BD9A1EF2547D00C13620 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +171,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4829F3F81EEFC16200497BAF /* Debug */ = {
+		BA52BD9D1EF2547D00C13620 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +221,7 @@
 			};
 			name = Debug;
 		};
-		4829F3F91EEFC16200497BAF /* Release */ = {
+		BA52BD9E1EF2547D00C13620 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,25 +264,25 @@
 			};
 			name = Release;
 		};
-		4829F3FB1EEFC16200497BAF /* Debug */ = {
+		BA52BDA01EF2547D00C13620 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PropertiesTest/Info.plist;
+				INFOPLIST_FILE = "Battle-Royal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jky.PropertiesTest;
+				PRODUCT_BUNDLE_IDENTIFIER = "sky.Battle-Royal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		4829F3FC1EEFC16200497BAF /* Release */ = {
+		BA52BDA11EF2547D00C13620 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PropertiesTest/Info.plist;
+				INFOPLIST_FILE = "Battle-Royal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jky.PropertiesTest;
+				PRODUCT_BUNDLE_IDENTIFIER = "sky.Battle-Royal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -287,25 +291,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4829F3E31EEFC16200497BAF /* Build configuration list for PBXProject "PropertiesTest" */ = {
+		BA52BD881EF2547D00C13620 /* Build configuration list for PBXProject "Battle-Royal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4829F3F81EEFC16200497BAF /* Debug */,
-				4829F3F91EEFC16200497BAF /* Release */,
+				BA52BD9D1EF2547D00C13620 /* Debug */,
+				BA52BD9E1EF2547D00C13620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4829F3FA1EEFC16200497BAF /* Build configuration list for PBXNativeTarget "PropertiesTest" */ = {
+		BA52BD9F1EF2547D00C13620 /* Build configuration list for PBXNativeTarget "Battle-Royal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4829F3FB1EEFC16200497BAF /* Debug */,
-				4829F3FC1EEFC16200497BAF /* Release */,
+				BA52BDA01EF2547D00C13620 /* Debug */,
+				BA52BDA11EF2547D00C13620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4829F3E01EEFC16200497BAF /* Project object */;
+	rootObject = BA52BD851EF2547D00C13620 /* Project object */;
 }

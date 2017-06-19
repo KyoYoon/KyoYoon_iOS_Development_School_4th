@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8zG-Gr-l18">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today 200자-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TodayDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="164" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YKv-4X-egY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="164" id="02R-EE-NuY" customClass="MyTableViewCell" customModule="TodayDiary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="164"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="02R-EE-NuY" id="Ob0-SK-qcM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="163.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YG-ve-421">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200.5"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pD8-L7-8lU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="281.5" height="200.5"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfl-pI-bea">
+                                                            <rect key="frame" x="281.5" y="0.0" width="93.5" height="200.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="2ej-q1-7Xx"/>
+                                                        <constraint firstItem="Yfl-pI-bea" firstAttribute="height" secondItem="pD8-L7-8lU" secondAttribute="height" id="g5X-mm-ZZ6"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pD8-L7-8lU" firstAttribute="width" secondItem="Ob0-SK-qcM" secondAttribute="width" multiplier="3/4" id="6EN-Hu-QjF"/>
+                                                <constraint firstItem="1YG-ve-421" firstAttribute="width" secondItem="Ob0-SK-qcM" secondAttribute="width" id="HZj-HY-73k"/>
+                                                <constraint firstItem="1YG-ve-421" firstAttribute="height" secondItem="Ob0-SK-qcM" secondAttribute="height" id="IYn-B0-GdE"/>
+                                                <constraint firstItem="pD8-L7-8lU" firstAttribute="height" secondItem="Ob0-SK-qcM" secondAttribute="height" id="aBV-mV-Z1u"/>
+                                                <constraint firstItem="1YG-ve-421" firstAttribute="centerY" secondItem="Ob0-SK-qcM" secondAttribute="centerY" id="teM-uU-NQG"/>
+                                                <constraint firstItem="1YG-ve-421" firstAttribute="centerX" secondItem="Ob0-SK-qcM" secondAttribute="centerX" id="u1u-jJ-Vd8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelDayText" destination="Yfl-pI-bea" id="n89-1q-Dou"/>
+                                            <outlet property="textView" destination="pD8-L7-8lU" id="yPX-js-gKC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="g3e-Xq-mO0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="88a-tO-r9n"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YKv-4X-egY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="62V-A2-0Hy"/>
+                            <constraint firstItem="YKv-4X-egY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="KDg-Uh-1Vf"/>
+                            <constraint firstItem="YKv-4X-egY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oQ9-9o-4xh"/>
+                            <constraint firstItem="YKv-4X-egY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xg3-Qp-Jy6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Today 200자" id="aWR-Ii-UNr"/>
+                    <connections>
+                        <outlet property="tableView" destination="YKv-4X-egY" id="fnQ-zv-m90"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="34.632683658170919"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pUi-99-jYL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8zG-Gr-l18" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ue8-Y7-dNt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xSK-R2-bd4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l84-Rr-Nz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="688.60569715142435"/>
+        </scene>
+    </scenes>
+</document>
