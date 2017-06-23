@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>director</key>
+		<array>
+			<string>Michael Bay</string>
+		</array>
+		<key>title</key>
+		<string>Transformers</string>
+		<key>year</key>
+		<integer>2007</integer>
+		<key>genre</key>
+		<array>
+			<string>Action</string>
+			<string>Adventure</string>
+			<string>Sci-Fi</string>
+		</array>
+		<key>stars</key>
+		<array>
+			<string>Sharia LaBeouf</string>
+			<string>Megan Fox</string>
+			<string>Josh Duhamel</string>
+		</array>
+		<key>posterUrl</key>
+		<string>Poster1.jpg</string>
+	</dict>
+</array>
+</plist>

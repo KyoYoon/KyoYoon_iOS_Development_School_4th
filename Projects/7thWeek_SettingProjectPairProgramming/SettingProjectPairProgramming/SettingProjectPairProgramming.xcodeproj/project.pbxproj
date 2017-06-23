@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4859499F1EFA17C8008B0381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859499E1EFA17C8008B0381 /* AppDelegate.swift */; };
+		485949A11EFA17C8008B0381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949A01EFA17C8008B0381 /* ViewController.swift */; };
+		485949A41EFA17C8008B0381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485949A21EFA17C8008B0381 /* Main.storyboard */; };
+		485949A61EFA17C8008B0381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485949A51EFA17C8008B0381 /* Assets.xcassets */; };
+		485949A91EFA17C8008B0381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485949A71EFA17C8008B0381 /* LaunchScreen.storyboard */; };
+		485949B11EFA17ED008B0381 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485949B01EFA17ED008B0381 /* Settings.plist */; };
+		485949B31EFA1AD2008B0381 /* WifiSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485949B21EFA1AD2008B0381 /* WifiSetting.plist */; };
+		485949B51EFA1B96008B0381 /* BluetoothSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485949B41EFA1B96008B0381 /* BluetoothSetting.plist */; };
+		485949B71EFA1C3B008B0381 /* CellularSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485949B61EFA1C3B008B0381 /* CellularSetting.plist */; };
+		485949B91EFA1DBB008B0381 /* HotspotSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485949B81EFA1DBB008B0381 /* HotspotSetting.plist */; };
+		485949BB1EFA1EB0008B0381 /* CarrierSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485949BA1EFA1EB0008B0381 /* CarrierSetting.plist */; };
+		485949BD1EFA3601008B0381 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949BC1EFA3601008B0381 /* SettingViewController.swift */; };
+		485949BF1EFA3630008B0381 /* WifiSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949BE1EFA3630008B0381 /* WifiSettingViewController.swift */; };
+		485949C11EFA3644008B0381 /* BluetoothSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949C01EFA3644008B0381 /* BluetoothSettingViewController.swift */; };
+		485949C31EFA3658008B0381 /* CellularSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949C21EFA3658008B0381 /* CellularSettingViewController.swift */; };
+		485949C51EFA366C008B0381 /* HotspotSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949C41EFA366C008B0381 /* HotspotSettingViewController.swift */; };
+		485949C71EFA3680008B0381 /* CarrierSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949C61EFA3680008B0381 /* CarrierSettingViewController.swift */; };
+		485949C91EFA3837008B0381 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949C81EFA3837008B0381 /* SwitchTableViewCell.swift */; };
+		485949CB1EFA3E46008B0381 /* SettingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949CA1EFA3E46008B0381 /* SettingCenter.swift */; };
+		485949D11EFA4D64008B0381 /* WifiSettingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949D01EFA4D64008B0381 /* WifiSettingCenter.swift */; };
+		485949D31EFA4D7C008B0381 /* BluetoothSettingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949D21EFA4D7C008B0381 /* BluetoothSettingCenter.swift */; };
+		485949D51EFA4D95008B0381 /* CellularSettingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949D41EFA4D95008B0381 /* CellularSettingCenter.swift */; };
+		485949D71EFA4DA6008B0381 /* HotspotSettingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949D61EFA4DA6008B0381 /* HotspotSettingCenter.swift */; };
+		485949D91EFA4DC0008B0381 /* CarrierSettingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485949D81EFA4DC0008B0381 /* CarrierSettingCenter.swift */; };
+		4889FCF61EFA802200373A65 /* CellularDataOptionSetting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4889FCF51EFA802200373A65 /* CellularDataOptionSetting.plist */; };
+		4889FCF81EFA818F00373A65 /* CellularDataOptionSettingCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889FCF71EFA818F00373A65 /* CellularDataOptionSettingCenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4859499B1EFA17C8008B0381 /* SettingProjectPairProgramming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingProjectPairProgramming.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4859499E1EFA17C8008B0381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		485949A01EFA17C8008B0381 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		485949A31EFA17C8008B0381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		485949A51EFA17C8008B0381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		485949A81EFA17C8008B0381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		485949AA1EFA17C8008B0381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485949B01EFA17ED008B0381 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		485949B21EFA1AD2008B0381 /* WifiSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WifiSetting.plist; sourceTree = "<group>"; };
+		485949B41EFA1B96008B0381 /* BluetoothSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BluetoothSetting.plist; sourceTree = "<group>"; };
+		485949B61EFA1C3B008B0381 /* CellularSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellularSetting.plist; sourceTree = "<group>"; };
+		485949B81EFA1DBB008B0381 /* HotspotSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HotspotSetting.plist; sourceTree = "<group>"; };
+		485949BA1EFA1EB0008B0381 /* CarrierSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CarrierSetting.plist; sourceTree = "<group>"; };
+		485949BC1EFA3601008B0381 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		485949BE1EFA3630008B0381 /* WifiSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiSettingViewController.swift; sourceTree = "<group>"; };
+		485949C01EFA3644008B0381 /* BluetoothSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSettingViewController.swift; sourceTree = "<group>"; };
+		485949C21EFA3658008B0381 /* CellularSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellularSettingViewController.swift; sourceTree = "<group>"; };
+		485949C41EFA366C008B0381 /* HotspotSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotSettingViewController.swift; sourceTree = "<group>"; };
+		485949C61EFA3680008B0381 /* CarrierSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierSettingViewController.swift; sourceTree = "<group>"; };
+		485949C81EFA3837008B0381 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		485949CA1EFA3E46008B0381 /* SettingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCenter.swift; sourceTree = "<group>"; };
+		485949D01EFA4D64008B0381 /* WifiSettingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiSettingCenter.swift; sourceTree = "<group>"; };
+		485949D21EFA4D7C008B0381 /* BluetoothSettingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothSettingCenter.swift; sourceTree = "<group>"; };
+		485949D41EFA4D95008B0381 /* CellularSettingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellularSettingCenter.swift; sourceTree = "<group>"; };
+		485949D61EFA4DA6008B0381 /* HotspotSettingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotSettingCenter.swift; sourceTree = "<group>"; };
+		485949D81EFA4DC0008B0381 /* CarrierSettingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierSettingCenter.swift; sourceTree = "<group>"; };
+		4889FCF51EFA802200373A65 /* CellularDataOptionSetting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CellularDataOptionSetting.plist; sourceTree = "<group>"; };
+		4889FCF71EFA818F00373A65 /* CellularDataOptionSettingCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellularDataOptionSettingCenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		485949981EFA17C8008B0381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		485949921EFA17C8008B0381 = {
+			isa = PBXGroup;
+			children = (
+				4859499D1EFA17C8008B0381 /* SettingProjectPairProgramming */,
+				4859499C1EFA17C8008B0381 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4859499C1EFA17C8008B0381 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4859499B1EFA17C8008B0381 /* SettingProjectPairProgramming.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4859499D1EFA17C8008B0381 /* SettingProjectPairProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				4859499E1EFA17C8008B0381 /* AppDelegate.swift */,
+				485949A01EFA17C8008B0381 /* ViewController.swift */,
+				485949CA1EFA3E46008B0381 /* SettingCenter.swift */,
+				485949D01EFA4D64008B0381 /* WifiSettingCenter.swift */,
+				485949D21EFA4D7C008B0381 /* BluetoothSettingCenter.swift */,
+				485949D81EFA4DC0008B0381 /* CarrierSettingCenter.swift */,
+				485949D41EFA4D95008B0381 /* CellularSettingCenter.swift */,
+				4889FCF71EFA818F00373A65 /* CellularDataOptionSettingCenter.swift */,
+				485949D61EFA4DA6008B0381 /* HotspotSettingCenter.swift */,
+				485949A21EFA17C8008B0381 /* Main.storyboard */,
+				485949C81EFA3837008B0381 /* SwitchTableViewCell.swift */,
+				485949A51EFA17C8008B0381 /* Assets.xcassets */,
+				485949A71EFA17C8008B0381 /* LaunchScreen.storyboard */,
+				485949AA1EFA17C8008B0381 /* Info.plist */,
+				485949B01EFA17ED008B0381 /* Settings.plist */,
+				485949B21EFA1AD2008B0381 /* WifiSetting.plist */,
+				485949B41EFA1B96008B0381 /* BluetoothSetting.plist */,
+				485949B61EFA1C3B008B0381 /* CellularSetting.plist */,
+				4889FCF51EFA802200373A65 /* CellularDataOptionSetting.plist */,
+				485949B81EFA1DBB008B0381 /* HotspotSetting.plist */,
+				485949BA1EFA1EB0008B0381 /* CarrierSetting.plist */,
+				485949BC1EFA3601008B0381 /* SettingViewController.swift */,
+				485949BE1EFA3630008B0381 /* WifiSettingViewController.swift */,
+				485949C01EFA3644008B0381 /* BluetoothSettingViewController.swift */,
+				485949C21EFA3658008B0381 /* CellularSettingViewController.swift */,
+				485949C41EFA366C008B0381 /* HotspotSettingViewController.swift */,
+				485949C61EFA3680008B0381 /* CarrierSettingViewController.swift */,
+			);
+			path = SettingProjectPairProgramming;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4859499A1EFA17C8008B0381 /* SettingProjectPairProgramming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485949AD1EFA17C8008B0381 /* Build configuration list for PBXNativeTarget "SettingProjectPairProgramming" */;
+			buildPhases = (
+				485949971EFA17C8008B0381 /* Sources */,
+				485949981EFA17C8008B0381 /* Frameworks */,
+				485949991EFA17C8008B0381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SettingProjectPairProgramming;
+			productName = SettingProjectPairProgramming;
+			productReference = 4859499B1EFA17C8008B0381 /* SettingProjectPairProgramming.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		485949931EFA17C8008B0381 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "정교윤";
+				TargetAttributes = {
+					4859499A1EFA17C8008B0381 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 485949961EFA17C8008B0381 /* Build configuration list for PBXProject "SettingProjectPairProgramming" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 485949921EFA17C8008B0381;
+			productRefGroup = 4859499C1EFA17C8008B0381 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4859499A1EFA17C8008B0381 /* SettingProjectPairProgramming */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		485949991EFA17C8008B0381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485949BB1EFA1EB0008B0381 /* CarrierSetting.plist in Resources */,
+				485949A91EFA17C8008B0381 /* LaunchScreen.storyboard in Resources */,
+				485949B11EFA17ED008B0381 /* Settings.plist in Resources */,
+				485949B31EFA1AD2008B0381 /* WifiSetting.plist in Resources */,
+				4889FCF61EFA802200373A65 /* CellularDataOptionSetting.plist in Resources */,
+				485949A61EFA17C8008B0381 /* Assets.xcassets in Resources */,
+				485949B51EFA1B96008B0381 /* BluetoothSetting.plist in Resources */,
+				485949B91EFA1DBB008B0381 /* HotspotSetting.plist in Resources */,
+				485949A41EFA17C8008B0381 /* Main.storyboard in Resources */,
+				485949B71EFA1C3B008B0381 /* CellularSetting.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		485949971EFA17C8008B0381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485949C11EFA3644008B0381 /* BluetoothSettingViewController.swift in Sources */,
+				485949D71EFA4DA6008B0381 /* HotspotSettingCenter.swift in Sources */,
+				485949A11EFA17C8008B0381 /* ViewController.swift in Sources */,
+				485949C71EFA3680008B0381 /* CarrierSettingViewController.swift in Sources */,
+				485949D11EFA4D64008B0381 /* WifiSettingCenter.swift in Sources */,
+				4859499F1EFA17C8008B0381 /* AppDelegate.swift in Sources */,
+				4889FCF81EFA818F00373A65 /* CellularDataOptionSettingCenter.swift in Sources */,
+				485949D91EFA4DC0008B0381 /* CarrierSettingCenter.swift in Sources */,
+				485949BF1EFA3630008B0381 /* WifiSettingViewController.swift in Sources */,
+				485949C91EFA3837008B0381 /* SwitchTableViewCell.swift in Sources */,
+				485949C51EFA366C008B0381 /* HotspotSettingViewController.swift in Sources */,
+				485949D31EFA4D7C008B0381 /* BluetoothSettingCenter.swift in Sources */,
+				485949D51EFA4D95008B0381 /* CellularSettingCenter.swift in Sources */,
+				485949CB1EFA3E46008B0381 /* SettingCenter.swift in Sources */,
+				485949BD1EFA3601008B0381 /* SettingViewController.swift in Sources */,
+				485949C31EFA3658008B0381 /* CellularSettingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		485949A21EFA17C8008B0381 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485949A31EFA17C8008B0381 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		485949A71EFA17C8008B0381 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				485949A81EFA17C8008B0381 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		485949AB1EFA17C8008B0381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		485949AC1EFA17C8008B0381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		485949AE1EFA17C8008B0381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SettingProjectPairProgramming/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jky.SettingProjectPairProgramming;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		485949AF1EFA17C8008B0381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SettingProjectPairProgramming/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jky.SettingProjectPairProgramming;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		485949961EFA17C8008B0381 /* Build configuration list for PBXProject "SettingProjectPairProgramming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485949AB1EFA17C8008B0381 /* Debug */,
+				485949AC1EFA17C8008B0381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485949AD1EFA17C8008B0381 /* Build configuration list for PBXNativeTarget "SettingProjectPairProgramming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485949AE1EFA17C8008B0381 /* Debug */,
+				485949AF1EFA17C8008B0381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 485949931EFA17C8008B0381 /* Project object */;
+}

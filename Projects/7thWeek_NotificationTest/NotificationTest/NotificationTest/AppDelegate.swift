@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  PlistDataTest
+//  NotificationTest
 //
-//  Created by 정교윤 on 2017. 6. 19..
+//  Created by 정교윤 on 2017. 6. 22..
 //  Copyright © 2017년 정교윤. All rights reserved.
 //
 
@@ -27,9 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-        // 화면이 뒤로 넘어갈 때 강제로 저장 
-        FriendData.standard.friendDataSave()
-        
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
