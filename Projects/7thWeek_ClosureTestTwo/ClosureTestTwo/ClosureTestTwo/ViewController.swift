@@ -132,14 +132,36 @@ class ViewController: UIViewController {
         
         print(newList)
         
+        print("-------------------------------------------")
+        
         let add = {(f:Int, s:Int) -> Int in f + s}
         let minus = {(f:Int, s:Int) -> Int in f - s}
         let multiply = {(f:Int, s:Int) -> Int in f * s}
-        let divide = {(f:Int, s:Int) -> Int in f * s}
+        let divide = {(f:Int, s:Int) -> Int in f / s}
         
         print( calculation(num1: 10, num2: 15, op: add) )
         print( calculation(num1: 10, num2: 15) {$0+$1} )
         print( calculation(num1: 12, num2: 14, op: +) ) // + 자체도 함수이다.
+        
+        print("-------------------------------------------")
+        
+        print( calculation(num1: 15, num2: 10, op: minus) )
+        print( calculation(num1: 10, num2: 5) {$0-$1} )
+        print( calculation(num1: 14, num2: 12, op: -) ) // - 자체도 함수이다.
+        
+        print("-------------------------------------------")
+        
+        print( calculation(num1: 15, num2: 10, op: multiply) )
+        print( calculation(num1: 10, num2: 5) {$0*$1} )
+        print( calculation(num1: 14, num2: 12, op: *) ) // - 자체도 함수이다.
+        
+        print("-------------------------------------------")
+        
+        print( calculation(num1: 15, num2: 5, op: divide) )
+        print( calculation(num1: 10, num2: 5) {$0/$1} )
+        print( calculation(num1: 14, num2: 7, op: /) ) // - 자체도 함수이다.
+        
+        print("-------------------------------------------")
         
 //        let testAction = testActionWithCompletion { (isSucess:Bool) in
 //            if isSucess

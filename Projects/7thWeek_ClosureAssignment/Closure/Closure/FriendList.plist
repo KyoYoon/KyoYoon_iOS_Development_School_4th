@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>sectionHeader</key>
+		<string>Friend List</string>
+		<key>sectionRowDatas</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>정교윤</string>
+				<key>gender</key>
+				<string>Mr.</string>
+				<key>age</key>
+				<string>39</string>
+				<key>cellType</key>
+				<string>detailCell</string>
+				<key>notiKey</key>
+				<string>update</string>
+				<key>detailData</key>
+				<array>
+					<dict>
+						<key>sectionHeader</key>
+						<string></string>
+						<key>sectionRowDatas</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>정교윤</string>
+								<key>gender</key>
+								<string>Mr.</string>
+								<key>age</key>
+								<string>39</string>
+								<key>cellType</key>
+								<string>basicCell</string>
+								<key>postKey</key>
+								<string>update</string>
+							</dict>
+						</array>
+						<key>sectionFooter</key>
+						<string></string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+		<key>sectionFooter</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
