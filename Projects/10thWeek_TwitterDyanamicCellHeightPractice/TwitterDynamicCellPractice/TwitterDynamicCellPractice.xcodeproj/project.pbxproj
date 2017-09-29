@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4865EF041F170F9B00BDDBBB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4865EF031F170F9B00BDDBBB /* CustomTableViewCell.swift */; };
 		4865EF081F173C6D00BDDBBB /* No_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 4865EF071F173C6D00BDDBBB /* No_image.png */; };
+		4865EF0A1F185EA200BDDBBB /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4865EF091F185EA200BDDBBB /* CustomUIView.swift */; };
 		B92583EF1F1702AB007AA58D /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B92583DA1F1702AB007AA58D /* 0.jpg */; };
 		B92583F01F1702AB007AA58D /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B92583DB1F1702AB007AA58D /* 1.jpg */; };
 		B92583F11F1702AB007AA58D /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B92583DC1F1702AB007AA58D /* 2.jpg */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		4865EF031F170F9B00BDDBBB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		4865EF071F173C6D00BDDBBB /* No_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = No_image.png; sourceTree = "<group>"; };
+		4865EF091F185EA200BDDBBB /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		B92583DA1F1702AB007AA58D /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 0.jpg; path = CustomTableViewCopy/0.jpg; sourceTree = "<group>"; };
 		B92583DB1F1702AB007AA58D /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpg; path = CustomTableViewCopy/1.jpg; sourceTree = "<group>"; };
 		B92583DC1F1702AB007AA58D /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = CustomTableViewCopy/2.jpg; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				B9899CE71F16FBC300B005CF /* AppDelegate.swift */,
 				B9899CE91F16FBC300B005CF /* ViewController.swift */,
+				4865EF091F185EA200BDDBBB /* CustomUIView.swift */,
 				B9899CFB1F16FC2B00B005CF /* DataCenter.swift */,
 				B9899CEB1F16FBC300B005CF /* Main.storyboard */,
 				B9899CEE1F16FBC300B005CF /* Assets.xcassets */,
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9899CFC1F16FC2B00B005CF /* DataCenter.swift in Sources */,
+				4865EF0A1F185EA200BDDBBB /* CustomUIView.swift in Sources */,
 				B9899CEA1F16FBC300B005CF /* ViewController.swift in Sources */,
 				4865EF041F170F9B00BDDBBB /* CustomTableViewCell.swift in Sources */,
 				B9899CE81F16FBC300B005CF /* AppDelegate.swift in Sources */,

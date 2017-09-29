@@ -104,8 +104,15 @@
                             <constraint firstItem="qbS-Dz-ztC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eMY-3D-M8A"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lO5-vP-jqR"/>
+                    <navigationItem key="navigationItem" id="lO5-vP-jqR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7FP-Nd-VHU">
+                            <connections>
+                                <action selector="touchAddBarButton:" destination="BYZ-38-t0r" id="1wa-XS-HOj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="wAI-Lw-2tr"/>
                         <outlet property="tableView" destination="qbS-Dz-ztC" id="G5u-cg-OFH"/>
                     </connections>
                 </viewController>
